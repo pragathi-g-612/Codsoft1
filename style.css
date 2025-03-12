@@ -1,0 +1,96 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #75d3cd;
+}
+
+.calculator {
+    width: 250px;
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.display {
+    width: 75%;
+    height: 30px;
+    font-size: 2.5em;
+    text-align: right;
+    padding: 30px;
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.btn {
+    padding: 15px;
+    font-size: 1.2em;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: #555;
+}
+
+/* Operator Buttons */
+.operator {
+    background: #ff9500;
+}
+
+.operator:hover {
+    background: #e68900;
+}
+
+/* AC and DEL Buttons - Red */
+.red {
+    background: #d9534f;
+}
+
+.red:hover {
+    background: #c9302c;
+}
+
+/* Clear button - Same red style */
+.clear {
+    grid-column: span 4;
+    background: #d9534f;
+}
+
+.clear:hover {
+    background: #c9302c;
+}
+/* Reduce size of AC, DEL, x², and √x buttons */
+.top-buttons .btn {
+    padding: 15px; /* Reduce padding */
+    font-size: 1em; /* Reduce text size */
+    width: 550px; /* Adjust width */
+    height: 40px; /* Adjust height */
+}
+.top-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Reduce space between buttons */
+}
+/* Add space between display screen and buttons */
+.top-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    margin-top: 15px; /* Adjust this value to increase/decrease space */
+}
+
